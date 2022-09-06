@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--Dark-cyan: hsl(179, 62%, 39%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body{
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Light-Gray);
+}
+
+.container{
+    width: 80%;
+}
+
+.container .article{
+    padding: 30px;
+    background-color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container .section{
+    display: flex;
+    flex-direction: column;
+}
+
+.container .article .join{
+    color: var(--Cyan);
+    margin-bottom: 20px;
+}
+
+.container .article .free{
+    font-size: 1.2rem;
+    color: var(--Bright-Yellow);
+    margin-bottom: 20px;
+}
+
+.container .article .library{
+    line-height: 1.3;
+    color: var(--Grayish-Blue);
+}
+
+.container .section .section-subscription{
+    background-color: var(--Dark-cyan);
+    padding: 30px;
+}
+
+.container .section .section-subscription h2{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.container .section .section-subscription .price{
+    color: var(--Light-Gray);
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.container .section .section-subscription .price span{
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.container .section .section-subscription .access{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.container .section .section-subscription button{
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Bright-Yellow);
+    font-size: 1rem;
+    color: #fff;
+}
+
+.container .section .section-why{
+    padding: 30px;
+    background-color: var(--Cyan);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.container .section .section-why h2{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.container .section .section-why p{
+    font-size: 1rem;
+    color: var(--Light-Gray);
+    line-height: 1.5;   
+}
+
+.attribution{
+    font-size: .7rem;
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+    .container{
+        width: 55%;
+    }
+    .container .section{
+        display: flex;
+        flex-direction: row;
+    }
+    .container .section .section-subscription{
+        width: 50%;
+        border-bottom-left-radius: 5px;
+    }
+    .container .section .section-why{
+        width: 50%;
+        border-bottom-left-radius: none;
+    }
+}
